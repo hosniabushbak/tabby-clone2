@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+:root {
+	/*fonts*/
+	--mainFont: 'Inter', sans-serif;
+	--secondaryFont: 'Montserrat', sans-serif;
+	--arabicFont: 'Cairo', sans-serif;
+	/*end fonts*/
+	--mainColor: #292929;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+/* constants */
+.container {
+	padding: 0 150px;
+}
+.grid {
+	display: grid;
+}
+.grid-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+.d-flex {
+	display: flex;
+}
+.d-inline-block {
+	display: inline-block;
+}
+.justify-content-s-between {
+	justify-content: space-between;
+}
+.justify-content-center {
+	justify-content: center;
+}
+.justify-flex-end {
+	justify-content: flex-end;
+}
+.align-items-center {
+	align-items: center;
+}
+.text-center {
+	text-align: center;
+}
+.padding-x-7 {
+	padding: 0 7px;
+}
+.margin-x-5 {
+	margin: 0 5rem;
+}
+.margin-x-4 {
+	margin: 0 4rem;
+}
+.margin-x-3 {
+	margin: 0 3rem;
+}
+.margin-x-2-5 {
+	margin: 0 2.5rem;
+}
+.margin-x-2 {
+	margin: 0 2rem;
+}
+.margin-x-1 {
+	margin: 0 1rem;
+}
+.w-100 {
+	width: 100%;
+}
+.h-100 {
+	height: 100%;
+}
+.d-none {
+	display: none;
+}
+/* end constants  */
+
+/* header */
+header {
+	background: url('../img/bg.png');
+}
+header nav {
+	height: 70px;
+	background: #fff;
+}
+header .content {
+	height: 250px;
+}
+header .logo img {
+	height: 70px;
+}
+header ul {
+	list-style: none;
+}
+header ul li {
+	display: inline-block;
+	padding: 0 7px;
+}
+header ul li a {
+	color: var(--mainColor);
+	font-family: var(--secondaryFont);
+	font-size: 15px;
+	font-weight: 500;
+}
+header ul li a:hover {
+	/*text-decoration: underline;
+	text-decoration-color: red;*/
+	padding-bottom: 3px;
+	border-bottom: 2px solid #3eedbf;
+}
+.language {
+	padding: 10px 0px;
+    border: 1px solid #e6e5e9;
+    border-radius: 30px;
+}
+.language .row-col {
+	padding: 0 12px;
+}
+.language .langFlag img {
+	padding-right: 10px;
+}
+ .language .langFlag p {
+	padding-right: 0 14px;
+	font-family: var(--secondaryFont);
+}
+.langFlag {
+	border-right: 1px solid #e6e5e9;
+}
+.getTheApp li {
+	margin: 0 13px;
+}
+.endMenuResponsive p {
+	font-family: var(--arabicFont);
+}
+/* end header */

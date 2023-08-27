@@ -1,0 +1,14 @@
+@media screen and (max-width: 1300px) {
+	.container {
+		padding: 0 40px;
+	}
+	.menu {
+		display: none;
+	}
+	.endMenu {
+		display: none;
+	}
+	.endMenuResponsive {
+		display: block !important;
+	}
+}
