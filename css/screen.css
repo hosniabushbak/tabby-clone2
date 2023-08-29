@@ -12,3 +12,32 @@
 		display: block !important;
 	}
 }
+@media screen and (max-width: 1254px) {
+	.modelImage {
+		align-items: flex-end;
+		    justify-content: flex-end;
+	}
+	.modelImage img{
+		height: 337px !important;
+	}
+}
+@media screen and (max-width: 990px) {
+	.headerContentGrid {
+		display: block;
+	}
+	.modelImage img {
+		height: 100% !important;
+	}
+	.mainText h1 {
+		font-size: 40px;
+	}
+	.modelImage {
+		display: block;
+	}
+	.qr {
+		display: none;
+	}
+	.header {
+		height: 576px;
+	}
+}

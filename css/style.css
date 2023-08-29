@@ -7,6 +7,8 @@
 	--arabicFont: 'Cairo', sans-serif;
 	/*end fonts*/
 	--mainColor: #292929;
+	--secondaryColor: #3eedbf;
+	--thirdColor: #e6e5e9;
 }
 * {
 	margin: 0;
@@ -67,6 +69,18 @@ a {
 .margin-x-1 {
 	margin: 0 1rem;
 }
+.mt-1 {
+	margin-top: 1rem;
+}
+.mt-2 {
+	margin-top: 2rem;
+}
+.mt-3 {
+	margin-top: 3rem;
+}
+.mt-4 {
+	margin-top: 4rem;
+}
 .w-100 {
 	width: 100%;
 }
@@ -81,6 +95,7 @@ a {
 /* header */
 header {
 	background: url('../img/bg.png');
+	height: 560px;
 }
 header nav {
 	height: 70px;
@@ -109,11 +124,11 @@ header ul li a:hover {
 	/*text-decoration: underline;
 	text-decoration-color: red;*/
 	padding-bottom: 3px;
-	border-bottom: 2px solid #3eedbf;
+	border-bottom: 2px solid var(--secondaryColor);
 }
 .language {
 	padding: 10px 0px;
-    border: 1px solid #e6e5e9;
+    border: 1px solid var(--thirdColor);
     border-radius: 30px;
 }
 .language .row-col {
@@ -127,12 +142,47 @@ header ul li a:hover {
 	font-family: var(--secondaryFont);
 }
 .langFlag {
-	border-right: 1px solid #e6e5e9;
+	border-right: 1px solid var(--thirdColor);
+}
+.langText {
+	font-family: var(--arabicFont);
+	color: #3835af;
 }
 .getTheApp li {
 	margin: 0 13px;
 }
 .endMenuResponsive p {
 	font-family: var(--arabicFont);
+	color: #3835af;
+}
+.mainText h1 {
+	font-size: 65px;
+	font-family: var(--mainFont);
+	color: var(--mainColor);
+}
+.descrptionText p {
+	color: var(--mainColor);
+	font-family: var(--mainFont);
+	font-size: 14px;
+	line-height: 1.7;
+} 
+.qr {
+	width: 30%;
+}
+.qr .qrImage {
+	padding: 10px;
+    border: 1px solid var(--mainColor);
+    border-radius: 12px;
+}
+.qr .qrImage img {
+	border-radius: 7px;
+    border: 5px solid #fff;
+}
+.qr p {
+	color: var(--mainColor);
+	font-family: var(--mainFont);
+	font-size: 14px;
+	line-height: 1.2;
+	font-weight: bold;
 }
 /* end header */
