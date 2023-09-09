@@ -13,9 +13,13 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: var(--mainFont);
 }
 a {
 	text-decoration: none;
+}
+ul {
+	list-style: none;
 }
 /* constants */
 .container {
@@ -26,6 +30,12 @@ a {
 }
 .grid-2 {
 	grid-template-columns: repeat(2, 1fr);
+}
+.grid-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+	grid-template-columns: repeat(4, 1fr);
 }
 .d-flex {
 	display: flex;
@@ -44,6 +54,9 @@ a {
 }
 .align-items-center {
 	align-items: center;
+}
+.align-items-start {
+	align-items: flex-start;
 }
 .text-center {
 	text-align: center;
@@ -89,6 +102,33 @@ a {
 }
 .d-none {
 	display: none;
+}
+.gap-4 {
+	gap: 4rem;
+}
+.bg-dark {
+	background: #000;
+}
+.py-4 {
+	padding: 4rem 0;
+}
+.mainBtn {
+	padding: 10px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--mainFont);
+	color: var(--mainColor);
+	border-radius: 25px;
+	border: 1px solid var(--mainColor);
+	background: transparent;
+	font-size: 17px;
+	font-weight: bold;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.mainBtn:hover {
+	border-color: var(--secondaryColor);
 }
 /* end constants  */
 
@@ -186,3 +226,39 @@ header ul li a:hover {
 	font-weight: bold;
 }
 /* end header */
+/* content */
+.content {
+	padding: 60px 0;
+}
+.content h1 {
+	font-size: 40px;
+	color: var(--mainColor);
+	font-weight: bold;
+	font-family: var(--mainFont);
+}
+section {
+	padding: 50px 0;
+}
+
+/*looking section*/
+.lookingBody .grid {
+	grid-template-columns: 58% 1fr;
+}
+/*end looking section*/
+
+/* end content */
+
+/*footer*/
+footer, footer a {
+	color: #fff;
+}
+footer ul {
+	margin-top: 10px;
+}
+footer li {
+	padding: 8px 0;
+}
+.footerGrid {
+	grid-template-columns: 25% 1fr;
+}
+/*end footer*/

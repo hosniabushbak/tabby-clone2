@@ -21,6 +21,11 @@
 		height: 337px !important;
 	}
 }
+@media screen and (max-width: 1155px) {
+	.aboutUsBody .grid {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+}
 @media screen and (max-width: 990px) {
 	.headerContentGrid {
 		display: block;
@@ -39,5 +44,20 @@
 	}
 	.header {
 		height: 576px;
+	}
+	.aboutUsBody .grid {
+		grid-template-columns: repeat(1, 1fr) !important;
+	}
+	.lookingBody .grid {
+		grid-template-columns: 1fr !important;
+	}
+	.mainBtn {
+		width: 100%;
+	}
+	.footerGrid {
+		grid-template-columns: 1fr;
+	}
+	.footerMenus {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
